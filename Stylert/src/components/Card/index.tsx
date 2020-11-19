@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { colors } from '../../theme/colors';
 
 import { Container, Label, Status } from './styles';
@@ -27,12 +28,12 @@ const Card = ({ amount, status }: IProps) => {
     REVERTIDO: 'neutral-400',
   };
 
+  const isStatusReversed = status === 'REVERTIDO';
+
   return (
     <Container>
       <Label>{amount}</Label>
-      <Status
-        strikeThrough={status === 'REVERTIDO'}
-        color={statusVariant[status]}>
+      <Status strikeThrough={isStatusReversed} color={statusVariant[status]}>
         {CardStatus[status]}
       </Status>
     </Container>
