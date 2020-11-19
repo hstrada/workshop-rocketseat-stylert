@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components/native';
-import { IStyledProps } from '.';
+import { IStyledProps } from './interface';
 
 export const Container = styled.View`
   height: 72px;
