@@ -1,9 +1,10 @@
 export const colors = {
-  green: '#32936F',
-  blue: '#0353A4',
-  pink: '#DB2763',
-  yellow: '#FFBF00',
-  neutral: '#F3F3F3',
-  white: '#FFFFFF',
+  'success-400': '#32936F',
+  'error-400': '#DB2727',
+  'warning-400': '#FFBF00',
+  'neutral-100': '#FFFFFF',
+  'neutral-200': '#F3F3F3',
+  'neutral-400': '#AFAFAF',
+  'neutral-700': '#1F1F1F',
   transparent: 'transparent',
 };
