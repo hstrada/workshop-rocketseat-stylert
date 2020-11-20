@@ -10,3 +10,15 @@ export const Container = styled.View`
   justify-content: space-between;
   align-items: center;
 `;
+
+export const Label = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.label};
+  font-size: 24px;
+  color: ${({ theme }) => theme.colors['neutral-700']};
+`;
+
+export const Description = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.label};
+  font-size: 24px;
+  color: ${({ theme }) => theme.colors['neutral-700']};
+`;

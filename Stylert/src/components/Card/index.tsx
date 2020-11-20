@@ -1,13 +1,13 @@
 import React from 'react';
-import { Text } from 'react-native';
+// import { Text } from 'react-native';
 
-import { Container } from './styles';
+import { Container, Label, Description } from './styles';
 
 const Card = () => {
   return (
     <Container>
-      <Text>Hello</Text>
-      <Text>Hello</Text>
+      <Label>R$ 100,00</Label>
+      <Description>pago</Description>
     </Container>
   );
 };
