@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components/native';
 
-import { IStyledProps } from './interface';
+import { ICardStyledProps } from './interface';
 
 export const Container = styled.View`
   height: 72px;
@@ -23,7 +23,7 @@ export const Label = styled.Text`
   ${fontVariant};
 `;
 
-export const Status = styled.Text<IStyledProps>`
+export const Status = styled.Text<ICardStyledProps>`
   ${fontVariant};
   font-weight: bold;
   color: ${({ color, theme }) => theme.colors[color]};
