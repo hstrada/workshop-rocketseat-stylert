@@ -1,13 +1,13 @@
 import React from 'react';
-// import { Text } from 'react-native';
+import { ICardProps } from './interface';
 
 import { Container, Label, Description } from './styles';
 
-const Card = () => {
+const Card = ({ amount, status }: ICardProps) => {
   return (
     <Container>
-      <Label>R$ 100,00</Label>
-      <Description>pago</Description>
+      <Label>{amount}</Label>
+      <Description>{status}</Description>
     </Container>
   );
 };
