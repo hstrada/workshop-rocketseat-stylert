@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { colors } from '../../theme/colors';
-
 import { Container, Label, Status } from './styles';
 
 import { ICardProps, TCardStatusVariant, CardStatus } from './interface';
