@@ -1,4 +1,4 @@
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 
 export const Container = styled.View`
   height: 72px;
@@ -11,14 +11,16 @@ export const Container = styled.View`
   align-items: center;
 `;
 
-export const Label = styled.Text`
+const fontVariant = css`
   font-family: ${({ theme }) => theme.fonts.label};
   font-size: 24px;
   color: ${({ theme }) => theme.colors['neutral-700']};
 `;
 
+export const Label = styled.Text`
+  ${fontVariant};
+`;
+
 export const Description = styled.Text`
-  font-family: ${({ theme }) => theme.fonts.label};
-  font-size: 24px;
-  color: ${({ theme }) => theme.colors['neutral-700']};
+  ${fontVariant};
 `;
