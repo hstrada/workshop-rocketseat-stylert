@@ -3,6 +3,8 @@ import { colors } from '../../theme/colors';
 export enum CardStatus {
   PAGO = 'pago',
   EM_ABERTO = 'em aberto',
+  EM_ATRASO = 'em atraso',
+  REVERTIDO = 'revertido',
 }
 
 export interface ICardProps {
@@ -13,3 +15,7 @@ export interface ICardProps {
 export interface ICardStyledProps {
   color: keyof typeof colors;
 }
+
+export type TCardStatusVariant = {
+  [key in keyof typeof CardStatus]: keyof typeof colors;
+};

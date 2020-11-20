@@ -13,6 +13,8 @@ const App = () => {
           <ThemeProvider theme={stylertTheme}>
             <Card amount="R$ 100,00" status="PAGO" />
             <Card amount="R$ 100,00" status="EM_ABERTO" />
+            <Card amount="R$ 100,00" status="EM_ATRASO" />
+            <Card amount="R$ 100,00" status="REVERTIDO" />
           </ThemeProvider>
         </View>
       </SafeAreaView>
