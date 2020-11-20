@@ -29,5 +29,8 @@ export const Status = styled.Text<ICardStyledProps>`
   color: ${({ color, theme }) => theme.colors[color]};
   ${({ strikeThrough, theme, color }) =>
     strikeThrough &&
-    `text-decoration: line-through; text-decoration-color: ${theme.colors[color]} `};
+    css`
+      text-decoration: line-through;
+      text-decoration-color: ${theme.colors[color]};
+    `}
 `;
