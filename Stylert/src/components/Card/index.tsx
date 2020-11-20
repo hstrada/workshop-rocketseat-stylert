@@ -14,10 +14,14 @@ const Card = ({ amount, status }: ICardProps) => {
     REVERTIDO: 'neutral-400',
   };
 
+  const isStatusReversed = status === 'REVERTIDO';
+
   return (
     <Container>
       <Label>{amount}</Label>
-      <Description color={statusVariant[status]}>
+      <Description
+        strikeThrough={isStatusReversed}
+        color={statusVariant[status]}>
         {CardStatus[status]}
       </Description>
     </Container>

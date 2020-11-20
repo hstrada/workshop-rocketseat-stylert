@@ -25,4 +25,10 @@ export const Label = styled.Text`
 export const Description = styled.Text<ICardStyledProps>`
   ${fontVariant};
   color: ${({ color, theme }) => theme.colors[color]};
+  ${({ strikeThrough, theme, color }) =>
+    strikeThrough &&
+    css`
+      text-decoration: line-through;
+      text-decoration-color: ${theme.colors[color]};
+    `};
 `;

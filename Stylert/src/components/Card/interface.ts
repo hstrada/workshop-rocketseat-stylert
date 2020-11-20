@@ -14,6 +14,7 @@ export interface ICardProps {
 
 export interface ICardStyledProps {
   color: keyof typeof colors;
+  strikeThrough: boolean;
 }
 
 export type TCardStatusVariant = {
