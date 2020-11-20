@@ -1,4 +1,9 @@
+export enum CardStatus {
+  PAGO = 'pago',
+  EM_ABERTO = 'em aberto',
+}
+
 export interface ICardProps {
   amount: string;
-  status: 'em aberto' | 'pago';
+  status: keyof typeof CardStatus;
 }
